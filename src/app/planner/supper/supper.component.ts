@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Meal } from '../meal';
 
 @Component({
@@ -7,7 +7,7 @@ import { Meal } from '../meal';
   styleUrls: ['./supper.component.css']
 })
 export class SupperComponent implements OnInit {
-  meals: Meal[] = [];
+  @Input() meals: Meal[] = [];
 
   constructor() { }
 

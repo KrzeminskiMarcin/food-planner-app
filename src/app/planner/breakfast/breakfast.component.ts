@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Meal } from '../meal';
 
 @Component({
@@ -7,13 +7,11 @@ import { Meal } from '../meal';
   styleUrls: ['./breakfast.component.css']
 })
 export class BreakfastComponent implements OnInit {
-  meals: Meal[] = [];
+  @Input() meals: Meal[] = [];
 
   constructor() { }
 
   ngOnInit(): void {
-    this.meals.push(new Meal('jajecznica', 1 ,'2022-11-20'));
-    this.meals.push(new Meal('kanapki', 1 ,'2022-11-20'));
   }
 
 }

@@ -2,7 +2,6 @@
   height: 100vh;
   width: 40vw;
   display: block;
-  border-right: 1px solid black;
 }
 .breakfast,.dinner,.supper{
   height: 33vh;
