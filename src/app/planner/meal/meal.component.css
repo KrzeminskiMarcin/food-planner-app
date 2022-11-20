@@ -1,9 +1,15 @@
-.meal{
+.meal {
   margin: 10px 10px;
-  padding: 2px 5px;
+  padding: 15px 15px;
   border: 1px solid black;
   border-radius: 5px;
+  background-color: white;
 }
-.action{
-  display: inline;
+.action {
+  display: inline-block;
+  width: 40%;
+}
+.meal-name {
+  display: inline-block;
+  width: 60%;
 }
